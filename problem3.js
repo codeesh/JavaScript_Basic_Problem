@@ -1,21 +1,24 @@
 function sortMaker(arr) {
     if (!Array.isArray(arr) || arr.length !== 2) {
-        return "Invalid Input";
+        var invalid = "Invalid Input";
+        return invalid;
     }
 
     var num1 = arr[0];
     var num2 = arr[1];
 
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-        return "Invalid Input";
+        var invalid = "Invalid Input";
+        return invalid;
     }
 
     if (num1 === num2) {
-        return "equal";
+        var eq = "equal";
+        return eq;
     } else if (num1 < num2) {
         return [num1, num2];
     } else {
-        return [num2, num1];
+       return [num2, num1];
     }
 }
 

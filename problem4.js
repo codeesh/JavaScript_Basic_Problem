@@ -1,6 +1,7 @@
 function findAddress(obj) {
     if (typeof obj !== 'object' || obj === null) {
-        return "Invalid Input";
+        var invalid = "Invalid Input";
+        return invalid;
     }
 
     const name = obj.name || "__name__";

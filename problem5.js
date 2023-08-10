@@ -1,10 +1,12 @@
 function canPay(changeArray, totalDue) {
     if (!Array.isArray(changeArray) || changeArray.length === 0) {
-        return "Cannot be empty";
+        var error1 = "Cannot be empty";
+        return error1;
     }
 
     if (typeof totalDue !== 'number') {
-        return "Price must be a number";
+        var error2 =  "Price must be a number";
+        return error2;
     }
 
     const totalCost = changeArray.reduce((sum, cost) => sum + cost, 0);
